@@ -1,17 +1,17 @@
 import React from 'react';
 
-import styles from './UsersList.css';
+import style from './UsersList.css';
 
 const UsersList = props => (
-  	<div className={styles.Users}>
-		<div className={styles.UsersOnline}>
+  	<div className={style.Users}>
+		<div className={style.UsersOnline}>
 	  		{props.users.length} people online
 		</div>
-		<ul className={styles.UsersList}>
+		<ul className={style.UsersList}>
 	  		{
 				props.users.map((user) => {
 		  			return (
-						<li key={user.id} className={styles.UserItem}>
+						<li key={user.id} className={style.UserItem}>
 			  				{user.name}
 						</li>
 		  			);

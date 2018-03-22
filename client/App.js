@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import io from 'socket.io-client';
 
-import styles from './App.css';
+import style from './App.css';
 
 import MessageForm from './MessageForm';
 import MessageList from './MessageList';
@@ -47,20 +47,20 @@ class App extends Component {
 	
 	renderLayout() {
 		return (
-			<div className={styles.App}>
-				<div className={styles.AppHeader}>
-					<div className={styles.AppTitle}>
+			<div className={style.App}>
+				<div className={style.AppHeader}>
+					<div className={style.AppTitle}>
 						ChatApp
 					</div>
-					<div className={styles.AppRoom}>
+					<div className={style.AppRoom}>
 						App room
 					</div>
 				</div>
-				<div className={styles.AppBody}>
+				<div className={style.AppBody}>
 					<UsersList
 						users={this.state.users}
 					/>
-					<div className={styles.MessageWrapper}>
+					<div className={style.MessageWrapper}>
 						<MessageList
 							messages={this.state.messages}
 						/>

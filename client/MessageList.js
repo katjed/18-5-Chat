@@ -1,15 +1,15 @@
 import React from 'react';
-import styles from './MessageList.css';
+import style from './MessageList.css';
 
 const Message = props => (
-  	<div className={styles.Message}>
+  	<div className={style.Message}>
 		<strong>{props.from} :</strong>
 		<span>{props.text}</span>
   	</div>
 );
 
 const MessageList = props => (
-  	<div className={styles.MessageList}>
+  	<div className={style.MessageList}>
 		{
 	  		props.messages.map((message, i) => {
 				return (

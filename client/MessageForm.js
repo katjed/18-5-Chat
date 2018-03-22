@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import styles from './MessageForm.css';
+import style from './MessageForm.css';
 
 class MessageForm extends Component {
   	constructor(props) {
@@ -24,9 +24,9 @@ class MessageForm extends Component {
 
   	render() {
 		return(
-	  		<form className={styles.MessageForm} onSubmit={e => this.handleSubmit(e)}>
+	  		<form className={style.MessageForm} onSubmit={e => this.handleSubmit(e)}>
 				<input
-		  			className={styles.MessageInput}
+		  			className={style.MessageInput}
 		  			onChange={e => this.changeHandler(e)}
 		  			value={this.state.text}
 		  			placeholder='Message'
