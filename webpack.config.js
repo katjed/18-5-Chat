@@ -54,17 +54,7 @@ module.exports = {
 			}
 		]
 	},
-	plugins: [
-		new HtmlWebpackPlugin({
-			template: 'client/index.html',
-			filename: 'index.html',
-  			inject: 'body'
-		}),
-		new webpack.optimize.UglifyJsPlugin(),
-		new OptimizeJsPlugin({
-  			sourceMap: false
-		})
-	],
+	plugins: plugins,
     resolve: {
         extensions: ['.js']
     }
